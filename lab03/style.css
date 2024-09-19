@@ -1,0 +1,56 @@
+
+
+
+
+    body {
+
+        background-color: #babad9;
+        color: #8b2b2b;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    h1 {
+        color:aqua;
+        text-align: center;
+
+    }
+
+    h2 {
+        color:aquamarine;
+
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    a {
+        color: #8b2b2b
+
+    }
+
+    a:hover {
+        text-decoration: underline;
+
+    }
+
+    #special-note {
+        background-color: #eee;
+        padding: 12px;
+        border-left: 4px solid #0055a5;
+    }
+
+    .higlight {
+        color: #4763ff
+        
+        
+
+        
+    }
+
+
+
+
+
