@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Table Visibility</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        #employeeTable {
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+
+    <button id="toggleButton">Get Employee Data</button>
+
+    <table id="employeeTable">
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Title</th>
+                <th>Division</th>
+                <th>Building</th>
+                <th>Room</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>be129</td>
+                <td>James</td>
+                <td>Smith</td>
+                <td>HR Manager</td>
+                <td>Human Resources</td>
+                <td>315</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>be130</td>
+                <td>Emily</td>
+                <td>Johnson</td>
+                <td>Marketing Specialist</td>
+                <td>Marketing</td>
+                <td>312</td>
+                <td>5</td>
+            </tr>
+           
+        </tbody>
+    </table>
+
+    <script>
+        
+        const toggleButton = document.getElementById('toggleButton');
+        const table = document.getElementById('employeeTable');
+
+        toggleButton.addEventListener('click', function() {
+            if (table.style.display === 'none') {
+                table.style.display = 'table'; 
+                toggleButton.textContent = 'Close Employee Data'; 
+            } else {
+                table.style.display = 'none'; 
+                toggleButton.textContent = 'Get Employee Data'; 
+            }
+        });
+    </script>
+
+</body>
+</html>
