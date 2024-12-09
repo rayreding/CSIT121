@@ -1,0 +1,131 @@
+body {
+    background: url('back.jpeg');
+    font-family: Arial, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background: url('back3.jpeg') no-repeat center center/cover;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+  }
+  
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    background: #333;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+  }
+  
+  nav ul li {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table th {
+    background-color: #333;
+    color: white;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:hover {
+    background-color: #ddd;
+  }
+  
+  table a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  table a:hover {
+    text-decoration: underline;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+  
+    header {
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      flex: none;
+      width: 100%;
+    }
+  
+    footer {
+      padding: 15px;
+      font-size: 14px;
+    }
+  
+    main {
+      padding: 15px;
+    }
+  }
